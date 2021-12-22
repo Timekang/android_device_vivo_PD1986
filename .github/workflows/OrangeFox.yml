@@ -65,7 +65,7 @@ jobs:
         export ALLOW_MISSING_DEPENDENCIES=true
         source build/envsetup.sh
         lunch twrp_PD1986-eng 
-        mka recoveryimage -j4
+        mka recoveryimage -j16
     
     - uses: actions/upload-artifact@v2
       with:
